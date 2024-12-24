@@ -43,7 +43,7 @@ export default function Home() {
 
 
       <HomeSlider/>
-      <CategorySlider />
+      <CategorySlider/>
 
       <div className="sm:gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {data.data.data.map((product) => <Card productInfo={product} key={product.id} />)}
