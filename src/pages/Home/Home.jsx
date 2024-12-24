@@ -2,7 +2,7 @@ import axios from "axios";
 import Card from "../../component/Card/Card";
 import Loading from "../../component/Loading/Loading";
 import HomeSlider from "../../component/HomeSlider/HomeSlider";
-import CategorySlider from "../../component/CategorySlider/CategorySlider";
+import CategorySlider from "../../component/categorySlider/CategorySlider";
 import { Helmet } from "react-helmet";
 import { useQuery } from "@tanstack/react-query";
 
