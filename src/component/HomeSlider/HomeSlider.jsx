@@ -5,7 +5,7 @@ import sliderImage3 from '../../assets/imgs/slider-image-3.jpeg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-export default function Homeslider() {
+export default function HomeSlider() {
   return (
     <>
     <section className="grid grid-cols-12 mb-8">

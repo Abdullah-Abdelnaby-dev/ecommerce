@@ -1,7 +1,7 @@
 import axios from "axios";
 import Card from "../../component/Card/Card";
 import Loading from "../../component/Loading/Loading";
-import Homeslider from "../../component/HomeSlider/Homeslider";
+import HomeSlider from "../../component/HomeSlider/HomeSlider";
 import CategorySlider from "../../component/categorySlider/categorySlider";
 import { Helmet } from "react-helmet";
 import { useQuery } from "@tanstack/react-query";
@@ -42,7 +42,7 @@ export default function Home() {
       </Helmet>
 
 
-      <Homeslider />
+      <HomeSlider/>
       <CategorySlider />
 
       <div className="sm:gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
