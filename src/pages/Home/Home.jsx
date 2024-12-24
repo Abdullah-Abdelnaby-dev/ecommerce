@@ -2,7 +2,7 @@ import axios from "axios";
 import Card from "../../component/Card/Card";
 import Loading from "../../component/Loading/Loading";
 import HomeSlider from "../../component/HomeSlider/HomeSlider";
-import CategorySlider from "../../component/categorySlider/categorySlider";
+import CategorySlider from "../../component/CategorySlider/CategorySlider";
 import { Helmet } from "react-helmet";
 import { useQuery } from "@tanstack/react-query";
 
@@ -21,7 +21,7 @@ export default function Home() {
 
 
 
-  let { data, isLoading, isError } = useQuery({
+  let { data, isLoading } = useQuery({
     queryKey: ["products"],
     queryFn: getProduct,
     refetchInterval: 3000,
