@@ -18,10 +18,10 @@ export default function WishList() {
 
   <section className="bg-gray-200 p-5 ">
   <h2 className="font-bold text-2xl text-black mb-8 ">My Wish List</h2>
+{wishlistInfo && wishlistInfo.length===0 && <p className="text-center text-2xl">No Products in Wish List</p>}
 
-{wishlistInfo.length===0 && <p className="text-center text-2xl">No Products in Wish List</p>}
 
-{wishlistInfo.map((item)=>{
+{wishlistInfo && wishlistInfo.map((item)=>{
   return <>
   <div key={item.id} className="wishList p-8 mb-4 flex justify-between items-center bg-white rounded-lg shadow-md">
   <div className="flex gap-10">
